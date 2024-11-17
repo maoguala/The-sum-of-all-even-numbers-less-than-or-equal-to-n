@@ -2,22 +2,39 @@
 #include <string>
 
 int a_for(int z = 0,int s = 0){
-    //z = x;
-for(int i = 1;i <=z; i++){
+    
+    for(int i = 1;i <=z; i++){
         if(i%2 == 0){
             s = s + i;
         }
     }
     std::cout << "Totall: " << s << std::endl;
-return 0;
+    return 0;
 }
 int b_while(int z = 0,int s = 0){
-
-return 0;
+    
+    int i = 0;
+    while (i <= z)
+    {
+        if(i%2 == 0){
+            s = s + i;
+        }
+        i++;
+    }
+    std::cout << "Totall: " << s << std::endl;
+    return 0;
 }
 int c_do_while(int z = 0,int s = 0){
-
-return 0;
+    
+    int i = 0;
+    do{
+        if(i%2 == 0){
+            s = s + i;
+        }
+        i++;
+    }while (i <= z);
+    std::cout << "Totall: " << s << std::endl;
+    return 0;
 }
 
 //main aera.
